@@ -16,8 +16,49 @@ body {
   flex-direction: column; /* items going top to bottom */
   justify-content: center;
   align-items: center;
+
+  /* Robot background */
   background: url('./robot.gif');
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(95%); /* will get 5% darker when we hover over it */
+}
+
+button:active {
+  transform: scale(0.98); /* will get 2% smaller when we click it */
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
 }
