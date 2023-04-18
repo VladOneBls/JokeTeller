@@ -3,3 +3,21 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background: #45badd;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw; /* dinamically scaling our project depending on the size of the viewport/window */
+  display: flex;
+  flex-direction: column; /* items going top to bottom */
+  justify-content: center;
+  align-items: center;
+  background: url('./robot.gif');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
